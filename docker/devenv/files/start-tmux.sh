@@ -10,9 +10,11 @@ set -e;
 
 echo "[start-tmux.sh] Installing node dependencies"
 pushd ~/penpot/frontend/
+yarn config set registry https://registry.npm.taobao.org/
 yarn install
 popd
 pushd ~/penpot/exporter/
+yarn config set registry https://registry.npm.taobao.org/
 yarn install
 npx playwright install chromium
 popd

@@ -1,4 +1,6 @@
 (ns build
+  (:mirrors {"clojars" {:name "ustc"
+                     :url "https://mirrors.ustc.edu.cn/clojars/"}})
   (:refer-clojure :exclude [compile])
   (:require
    [clojure.tools.build.api :as b]

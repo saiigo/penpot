@@ -1,4 +1,7 @@
 {:paths ["src" "vendor" "resources" "test"]
+ :mvn/repos
+ {"central" {:url "https://repo1.maven.org/maven2/"}
+  "clojars" {:url "https://mirrors.ustc.edu.cn/clojars/"}}
  :deps
  {penpot/common
   {:local/root "../common"}
